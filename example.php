@@ -21,6 +21,7 @@ function address()
     echo  "the pattern is: " .$half1;
     echo "<br>";
     $pln= "this is a happy day!!!";
+    echo "<br>";
     echo strrev($pln);
      $ring = "I\'m saying, that my essay is about my mom and daddy";  /*to know the % of similarity b/w strings"
 */
