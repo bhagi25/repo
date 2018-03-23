@@ -1,4 +1,18 @@
+
+
 <?php
+include 'C:\xampp\htdocs\vscodephpproject\newerrorpage.php';
 echo "hello";
-preg_match('/bhagi/')
+function nameValidate($str)
+{
+    if(preg_match('/bhagi/',$str))
+    {
+        echo "true";
+        return;
+    }
+    else 
+    echo "false";
+}
+
+
 ?>

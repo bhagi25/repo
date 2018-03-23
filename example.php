@@ -23,12 +23,20 @@ function address()
     $pln= "this is a happy day!!!";
     echo "<br>";
     echo strrev($pln);
-     $ring = "I\'m saying, that my essay is about my mom and daddy";  /*to know the % of similarity b/w strings"
+     
+     $ring = "I'm saying, that my essay is about my mom and daddy";  /*to know the % of similarity b/w strings"
 */
+
+echo addslashes($ring); /* to remove slashes use stripslashes() and to add slashes use addslashes()*/
 $ring1 = "My essay is about my in-laws";
 similar_text($ring,$ring1,$result);
-echo "the similarty is, \n" .$result;
-
+//echo "the similarty is, " .$result;
+echo nl2br("$result \n");
+$x = ' This is my new example. ';
+$y = ltrim($x);
+echo $y;
+echo "<br>";
 }
 address();
+
 ?>

@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<form id="page" method="post">
+    <table>
+<tr><td>Username:</td><td> <input name="uname" id="uid" type="text"/></td></tr>
+<tr><td>Password:</td><td> <input name="pass" id ="pass" type="text"/></td></tr>
+<tr><td>Submit: </td><td><input type= "submit" name="submit" id="submit" value="submit"/></td></tr>
+<tr>
+<th colspan="2">  
+<?php
+echo "hgfh";
+include 'C:\xampp\htdocs\vscodephpproject\lession1.php';
+echo "jhefgj";
+    if(isset($_REQUEST['submit']))
+    {
+        $var1 = $_REQUEST['uid'];
+        $var2 = $_REQUEST['pass'];
+        echo $var1. $var2;
+        abc($var1);
+        echo "end of prg";
+        
+    }
+  
+?>
+</th> 
+</tr>
+</table>
+</form>
+</body>
+</html>
