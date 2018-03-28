@@ -11,16 +11,16 @@ if(isset($_POST['input']) && isset($_POST['search']) && isset($_POST['replace'])
     $len = strlen($search);
    if(!empty($var) && !empty($replace) && !empty($search))
     {
-       while($strpos = strpos($var,$search,$offset))
+       while($strpos = strpos($var,$search,$offset)=== TRUE)
        {
-        echo is_numeric($strpos);
+        echo 'the strpos value is: ' .is_numeric($strpos). '<br>';
         echo $strpos. '<br>';
-        echo $offset = $strpos + $len. '<br>';
+        echo "the offset is: " .$offset = $strpos + $len. '<br>';
     
        }
     //  var_dump($strpos);
-   //$ting = str_replace($search,$replace,$var);
-   //echo $ting;
+   $ting = str_replace($search,$replace,$var);
+   echo $ting;
    }   
    else
    {
